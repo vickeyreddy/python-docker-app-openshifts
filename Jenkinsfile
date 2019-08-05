@@ -20,8 +20,8 @@ node{
    stage("App deployment started"){
      sh 'oc login --token=nYolyX-cqohjHOU4vjJiwNo18YOgemhRldkzBRoXY-E --server=https://api.us-east-2.online-starter.openshift.com:6443'
      //sh 'oc new project python-docker'
-     sh 'oc  import-image vickeyreddy/python-docker:pattabhi-1.0 --name python-app2'
-     sh 'oc expose svc python-app2 --name=python-app2'
+     sh 'oc  import-image vickeyreddy/python-docker:pattabhi-1.0 --name python'
+     sh 'oc expose svc python-app2 --name=python-app'
      sh 'oc status'
     }
    
