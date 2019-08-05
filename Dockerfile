@@ -1,7 +1,7 @@
 # Use an official Python runtime as a parent image
 FROM python:3.6.5-alpine3.7
 
-MAINTAINER MANIVANNAN.C
+MAINTAINER vickeyreddy
 # Set the working directory to /app
 WORKDIR /app
 
