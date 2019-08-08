@@ -9,7 +9,8 @@ WORKDIR /app
 ADD . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install -r requirements.txt newrelic
+RUN pip install -r requirements.txt 
+RUN pip install newrelic
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
